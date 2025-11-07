@@ -1,0 +1,1613 @@
+fileFormatVersion: 2
+guid: 2aedd4b9256aa7240bd6c54ff61591f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -553737030562313304
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_0
+  - first:
+      213: -7895240930516892498
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_1
+  - first:
+      213: 3263250346037613588
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_2
+  - first:
+      213: -8385966817857928196
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_3
+  - first:
+      213: 2664193062518339908
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_4
+  - first:
+      213: -6038063514249348064
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_5
+  - first:
+      213: 238485272100795598
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_6
+  - first:
+      213: 5682458698794498936
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_7
+  - first:
+      213: -7037636771660869101
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_8
+  - first:
+      213: -8790439639662618743
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_9
+  - first:
+      213: 5174891668368178284
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_10
+  - first:
+      213: -4482579890161850650
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_11
+  - first:
+      213: 8110709890530853376
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_12
+  - first:
+      213: -2091028218107412755
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_13
+  - first:
+      213: 7984132614104282224
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_14
+  - first:
+      213: 9213393142627617622
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_15
+  - first:
+      213: 4197818694864274730
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_16
+  - first:
+      213: 5827891794581448169
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_17
+  - first:
+      213: -2990022349107962957
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_18
+  - first:
+      213: -1749595366116042660
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_19
+  - first:
+      213: 5934350747546173692
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_20
+  - first:
+      213: 4397559486995196149
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_21
+  - first:
+      213: 1103732353430756282
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_22
+  - first:
+      213: -1530658702168158201
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_23
+  - first:
+      213: 7256006421152483635
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_24
+  - first:
+      213: 8354605709403238007
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_25
+  - first:
+      213: -8996633013653396835
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_26
+  - first:
+      213: 1958824189694573290
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_27
+  - first:
+      213: 4025842911063634811
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_28
+  - first:
+      213: 5583841406869272884
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_29
+  - first:
+      213: 5316795446912838960
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_30
+  - first:
+      213: 3539979500733006
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_31
+  - first:
+      213: 1742823941032220483
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_32
+  - first:
+      213: 5512720359019514746
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_33
+  - first:
+      213: -9047864118240944791
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_34
+  - first:
+      213: 3828016590764655861
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_35
+  - first:
+      213: -23836687129118425
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_36
+  - first:
+      213: 1437280050744798068
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_37
+  - first:
+      213: 6957666664515581191
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_38
+  - first:
+      213: -8524231097275727931
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_39
+  - first:
+      213: 5435714306582409763
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_40
+  - first:
+      213: 597204674337121564
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_41
+  - first:
+      213: -7000886230374208678
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_42
+  - first:
+      213: 4636902008878906243
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_43
+  - first:
+      213: -6906890086955060375
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_44
+  - first:
+      213: -8605655003465170281
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_45
+  - first:
+      213: -3756475785490423247
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_46
+  - first:
+      213: 1376637461573937375
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_47
+  - first:
+      213: 7166750108696072409
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_48
+  - first:
+      213: -3480463185403370893
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_49
+  - first:
+      213: -7472739427946143339
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_50
+  - first:
+      213: 358726435889012065
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_51
+  - first:
+      213: 6712569771109091287
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_52
+  - first:
+      213: -5601665660824689715
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_53
+  - first:
+      213: 9177564686097694413
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_54
+  - first:
+      213: 4411415462909582566
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_55
+  - first:
+      213: 6738965759719044415
+    second: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 554
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab8a52ca1bb058f0800000000000000
+      internalID: -553737030562313304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 554
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea48a6854387e6290800000000000000
+      internalID: -7895240930516892498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 554
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4141eb876e4694d20800000000000000
+      internalID: 3263250346037613588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 554
+        width: 87
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf38d532c9f0f9b80800000000000000
+      internalID: -8385966817857928196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 554
+        width: 91
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4493770997d19f420800000000000000
+      internalID: 2664193062518339908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 555
+        width: 89
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cbbed893d743ca0800000000000000
+      internalID: -6038063514249348064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 554
+        width: 96
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4fab767154f4300800000000000000
+      internalID: 238485272100795598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 554
+        width: 101
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b797064162cde40800000000000000
+      internalID: 5682458698794498936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 554
+        width: 83
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3125de6a4aa455e90800000000000000
+      internalID: -7037636771660869101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 554
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9879562b8b5120680800000000000000
+      internalID: -8790439639662618743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 551
+        width: 83
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cb63cfd88e0d740800000000000000
+      internalID: 5174891668368178284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 554
+        width: 85
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6e791f65daac1c0800000000000000
+      internalID: -4482579890161850650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_12
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 549
+        width: 95
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002c65d4ca70f8070800000000000000
+      internalID: 8110709890530853376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 426
+        width: 78
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deeb3641aec2bf2e0800000000000000
+      internalID: -2091028218107412755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 423
+        width: 78
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074fb4f8f465dce60800000000000000
+      internalID: 7984132614104282224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 426
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bc652af3c8cdf70800000000000000
+      internalID: 9213393142627617622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 426
+        width: 87
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2501eaacd5a14a30800000000000000
+      internalID: 4197818694864274730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 426
+        width: 78
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5e07da5b4d0e050800000000000000
+      internalID: 5827891794581448169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_18
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 426
+        width: 76
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbd0fae38e4186d0800000000000000
+      internalID: -2990022349107962957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 426
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58dbf5c84038b7e0800000000000000
+      internalID: -1749595366116042660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_20
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 422
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf04018309c0b5250800000000000000
+      internalID: 5934350747546173692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_21
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 422
+        width: 102
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f86ffcdd05470d30800000000000000
+      internalID: 4397559486995196149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_22
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 423
+        width: 104
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb98554abe315f00800000000000000
+      internalID: 1103732353430756282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_23
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 423
+        width: 104
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70018e8250202cae0800000000000000
+      internalID: -1530658702168158201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_24
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 423
+        width: 101
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3394fb4656382b460800000000000000
+      internalID: 7256006421152483635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 299
+        width: 104
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2e6bc0a581f370800000000000000
+      internalID: 8354605709403238007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_26
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 299
+        width: 104
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9223a6b0f9852380800000000000000
+      internalID: -8996633013653396835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_27
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 299
+        width: 102
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeaff24e8342f2b10800000000000000
+      internalID: 1958824189694573290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_28
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 299
+        width: 104
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73f87b3ccaaed730800000000000000
+      internalID: 4025842911063634811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 299
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4397f82dc2acd7d40800000000000000
+      internalID: 5583841406869272884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_30
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 299
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d67a41a4d09c940800000000000000
+      internalID: 5316795446912838960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_31
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 299
+        width: 155
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4247a4b7939c0000800000000000000
+      internalID: 3539979500733006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_32
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 299
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3479547f321cf2810800000000000000
+      internalID: 1742823941032220483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_33
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 299
+        width: 104
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b0c6975fd118c40800000000000000
+      internalID: 5512720359019514746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_34
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 299
+        width: 107
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dde38a5878f6280800000000000000
+      internalID: -9047864118240944791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_35
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 313
+        width: 114
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f444debec8df1530800000000000000
+      internalID: 3828016590764655861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_36
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 161
+        width: 95
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729fb0bc8a05baff0800000000000000
+      internalID: -23836687129118425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 161
+        width: 96
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b2663579e32f310800000000000000
+      internalID: 1437280050744798068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_38
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 182
+        width: 107
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7053704d7f89e8060800000000000000
+      internalID: 6957666664515581191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_39
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 180
+        width: 106
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfba87faf8d3b980800000000000000
+      internalID: -8524231097275727931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_40
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 180
+        width: 84
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3227a58bc598f6b40800000000000000
+      internalID: 5435714306582409763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_41
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 180
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c152118bc72b94800800000000000000
+      internalID: 597204674337121564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_42
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 180
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b2f95d01bd7de90800000000000000
+      internalID: -7000886230374208678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_43
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 180
+        width: 83
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bb5894fc5995040800000000000000
+      internalID: 4636902008878906243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_44
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 180
+        width: 79
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96370686f0cc520a0800000000000000
+      internalID: -6906890086955060375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_45
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 180
+        width: 83
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79245ea7e52929880800000000000000
+      internalID: -8605655003465170281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_46
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 164
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132ac7efc215edbc0800000000000000
+      internalID: -3756475785490423247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_47
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 164
+        width: 107
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd82c914a7cca1310800000000000000
+      internalID: 1376637461573937375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_48
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 164
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d052d6b049657360800000000000000
+      internalID: 7166750108696072409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_49
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 138
+        width: 147
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37225345c29e2bfc0800000000000000
+      internalID: -3480463185403370893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_50
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 11
+        width: 99
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591e632251f7b4890800000000000000
+      internalID: -7472739427946143339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 11
+        width: 95
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16dd4b6fac37af400800000000000000
+      internalID: 358726435889012065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_52
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 11
+        width: 78
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d78bf064a6d72d50800000000000000
+      internalID: 6712569771109091287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_53
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 11
+        width: 91
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc36a08a2c2e242b0800000000000000
+      internalID: -5601665660824689715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_54
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 36
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dceb50a05724d5f70800000000000000
+      internalID: 9177564686097694413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_55
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 49
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec1467adfe783d30800000000000000
+      internalID: 4411415462909582566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 49
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35f29567ad958d50800000000000000
+      internalID: 6738965759719044415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 17d049e8cd17f5b4fbfc07f2eff5cb5c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_0: -553737030562313304
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_1: -7895240930516892498
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_10: 5174891668368178284
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_11: -4482579890161850650
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_12: 8110709890530853376
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_13: -2091028218107412755
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_14: 7984132614104282224
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_15: 9213393142627617622
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_16: 4197818694864274730
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_17: 5827891794581448169
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_18: -2990022349107962957
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_19: -1749595366116042660
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_2: 3263250346037613588
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_20: 5934350747546173692
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_21: 4397559486995196149
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_22: 1103732353430756282
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_23: -1530658702168158201
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_24: 7256006421152483635
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_25: 8354605709403238007
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_26: -8996633013653396835
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_27: 1958824189694573290
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_28: 4025842911063634811
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_29: 5583841406869272884
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_3: -8385966817857928196
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_30: 5316795446912838960
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_31: 3539979500733006
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_32: 1742823941032220483
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_33: 5512720359019514746
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_34: -9047864118240944791
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_35: 3828016590764655861
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_36: -23836687129118425
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_37: 1437280050744798068
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_38: 6957666664515581191
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_39: -8524231097275727931
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_4: 2664193062518339908
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_40: 5435714306582409763
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_41: 597204674337121564
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_42: -7000886230374208678
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_43: 4636902008878906243
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_44: -6906890086955060375
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_45: -8605655003465170281
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_46: -3756475785490423247
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_47: 1376637461573937375
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_48: 7166750108696072409
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_49: -3480463185403370893
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_5: -6038063514249348064
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_50: -7472739427946143339
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_51: 358726435889012065
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_52: 6712569771109091287
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_53: -5601665660824689715
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_54: 9177564686097694413
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_55: 4411415462909582566
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_56: 6738965759719044415
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_57: -586177592
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_6: 238485272100795598
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_7: 5682458698794498936
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_8: -7037636771660869101
+      sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_9: -8790439639662618743
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
