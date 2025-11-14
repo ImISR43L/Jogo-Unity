@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathZoneController : MonoBehaviour
 {
@@ -9,6 +10,6 @@ public class DeathZoneController : MonoBehaviour
     }
 
     void ReloadCurrentScene(){
-        sceneManager.LoadScene(sceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
