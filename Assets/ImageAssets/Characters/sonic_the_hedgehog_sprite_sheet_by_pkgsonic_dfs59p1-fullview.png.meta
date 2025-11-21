@@ -1164,9 +1164,9 @@ TextureImporter:
       name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_40
       rect:
         serializedVersion: 2
-        x: 436
+        x: 437
         y: 180
-        width: 84
+        width: 79
         height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1186,9 +1186,9 @@ TextureImporter:
       name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_41
       rect:
         serializedVersion: 2
-        x: 517
+        x: 518
         y: 180
-        width: 79
+        width: 76
         height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1230,9 +1230,9 @@ TextureImporter:
       name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_43
       rect:
         serializedVersion: 2
-        x: 672
+        x: 674
         y: 180
-        width: 83
+        width: 78
         height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1274,9 +1274,9 @@ TextureImporter:
       name: sonic_the_hedgehog_sprite_sheet_by_pkgsonic_dfs59p1-fullview_45
       rect:
         serializedVersion: 2
-        x: 829
+        x: 831
         y: 180
-        width: 83
+        width: 81
         height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
