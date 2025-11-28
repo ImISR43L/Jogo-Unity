@@ -52,15 +52,15 @@ public class EnemyWaypointMovement : MonoBehaviour
 
         Vector2 targetPosition = waypoints[currentWaypointIndex].position;
         movementDirection = (targetPosition - (Vector2)transform.position).normalized;
-        rb.linearVelocity = movementDirection * moveSpeed;
+        rb.linearVelocity = new Vector2(movementDirection.x * moveSpeed, rb.linearVelocity.y);
 
         if(movementDirection.x > 0.1)
         {
-            visual.localScale = new Vector3(1, 1, 1);
+            visual.localScale = new Vector3(-3, 3, 3);
         }
         else
         {
-            visual.localScale = new Vector3(-1, 1, 1);
+            visual.localScale = new Vector3(3, 3, 3);
         }
     }
 
@@ -120,5 +120,10 @@ public class EnemyWaypointMovement : MonoBehaviour
                 lastAttackTime = Time.time;
             }
         }
+    }
+
+    public void Jump(float jumpForce)
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
 }

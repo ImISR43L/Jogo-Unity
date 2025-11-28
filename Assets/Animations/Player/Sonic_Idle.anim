@@ -25,7 +25,7 @@ AnimationClip:
     - time: 0
       value: {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.083333336
-      value: {fileID: 2664193062518339908, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
+      value: {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.16666667
       value: {fileID: -6038063514249348064, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.25
@@ -33,7 +33,7 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 2664193062518339908, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.5
-      value: {fileID: -6038063514249348064, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
+      value: {fileID: 3263250346037613588, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.6666667
       value: {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - time: 0.75
@@ -64,11 +64,11 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 3263250346037613588, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
-    - {fileID: 2664193062518339908, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
+    - {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: -6038063514249348064, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: 2664193062518339908, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
-    - {fileID: -6038063514249348064, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
+    - {fileID: 3263250346037613588, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: -8385966817857928196, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: 2664193062518339908, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}
     - {fileID: -6038063514249348064, guid: 2aedd4b9256aa7240bd6c54ff61591f9, type: 3}

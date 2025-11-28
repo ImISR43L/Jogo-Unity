@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f0be7f9e5be57d4fa20e609d549fca7
+guid: fbe5f0e3fe67a97448428bc442aa6d83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1828200412406610596
-    second: Green Hill Zone_0
+      213: 5944545424055895960
+    second: Green Hill Tree_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green Hill Zone_0
+      name: Green Hill Tree_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 637
-        height: 395
+        x: 0
+        y: 0
+        width: 73
+        height: 129
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c550840496de0a6e0800000000000000
-      internalID: -1828200412406610596
+      spriteID: 897860051944f7250800000000000000
+      internalID: 5944545424055895960
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3c93a5c26fd89094cb5b5d357011a7d1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -146,11 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Green Hill Zone_0: -1828200412406610596
+      Green Hill Tree_0: 5944545424055895960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
