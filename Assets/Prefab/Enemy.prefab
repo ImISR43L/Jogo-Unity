@@ -130,7 +130,7 @@ MonoBehaviour:
   visual: {fileID: 207707106191844579}
   damage: 10
   attackCooldown: 1
-  knockbackForce: 15
+  knockbackForce: 5
 --- !u!95 &5663686262775024093
 Animator:
   serializedVersion: 7

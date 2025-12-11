@@ -54,45 +54,46 @@ public class SonicController : MonoBehaviour
         ApplyMovement();
     }
 
-    // --- LÓGICA DE COMBATE UNIFICADA ---
-    // --- LÓGICA DE COMBATE CORRIGIDA ---
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Verifica todos os pontos de contato
-            foreach (ContactPoint2D point in collision.contacts)
-            {
-                // Verifica se o contato veio de baixo (Sonic está em cima)
-                if (point.normal.y > 0.5f)
-                {
-                    // 1. Matar Inimigo
-                    Destroy(collision.gameObject);
-                    
-                    // 2. Quicar
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
-                    
-                    // 3. RETORNAR IMEDIATAMENTE
-                    return; 
-                }
-            }
+            // --- LÓGICA POR POSIÇÃO (Mais robusta) ---
             
-            // Se chegou aqui, é DANO.
-            if (playerHealth != null)
+            // 1. Identificar alturas
+            // Pega a altura dos pés do Sonic (limite inferior do colisor)
+            float sonicFeetY = col.bounds.min.y;
+            // Pega a altura do centro do inimigo
+            float enemyCenterY = collision.collider.bounds.center.y;
+
+            // 2. Regra do Stomp
+            // Se os pés estão acima do centro do inimigo, consideramos que foi um pulo na cabeça
+            // Adicionamos uma pequena margem (0.1f) para ser mais permissivo
+            bool isStomp = sonicFeetY > (enemyCenterY + 0.1f);
+
+            // Extra: Impede que o Sonic mate o inimigo enquanto sobe (cabeçada por baixo)
+            if (rb.linearVelocity.y > 0.1f) isStomp = false;
+
+            if (isStomp)
             {
-                // Calcula a direção do empurrão (do inimigo para o Sonic)
-                Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
-                float knockbackForce = 5f; // Força padrão do empurrão
+                // -- VITÓRIA (Stomp) --
+                Destroy(collision.gameObject);
                 
-                // Agora passamos os 3 argumentos que o erro pediu:
-                // 1. Dano (1)
-                // 2. Direção (knockbackDirection)
-                // 3. Força (knockbackForce)
-                playerHealth.TakeDamage(1f, knockbackDirection, knockbackForce); 
+                // Aplica o pulo (Bounce)
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+            }
+            else
+            {
+                // -- DERROTA (Dano) --
+                if (playerHealth != null)
+                {
+                    Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
+                    // Força padrão de empurrão = 5f (pode ajustar aqui)
+                    playerHealth.TakeDamage(10f, knockbackDirection, 5f); 
+                }
             }
         }
     }
-    // -----------------------------------
 
     private void UpdateVisuals()
     {
