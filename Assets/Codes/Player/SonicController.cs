@@ -7,8 +7,8 @@ public class SonicController : MonoBehaviour
     [SerializeField] private float acceleration = 40f;
     [SerializeField] private float deceleration = 25f;
     [SerializeField] private float maxSpeed = 12f;
-    [SerializeField] private float jumpForce = 12f;
-    [SerializeField] private float bounceForce = 10f; 
+    [SerializeField] private float jumpForce = 15f; 
+    [SerializeField] private float bounceForce = 12f;
     [SerializeField] private float airDrag = 2f;
 
     [Header("Detecção de Chão")]
@@ -21,17 +21,20 @@ public class SonicController : MonoBehaviour
 
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
-    private PlayerHealth playerHealth; // Referência ao script de vida
+    private PlayerHealth playerHealth;
     
     private float horizontalInput;
     private bool isGrounded;
     private Vector2 groundNormal;
 
+    private float jumpBufferTime = 0.2f;
+    private float jumpBufferCounter;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
-        playerHealth = GetComponent<PlayerHealth>(); // Busca o script automaticamente
+        playerHealth = GetComponent<PlayerHealth>();
         
         if (anim == null && visual != null) anim = visual.GetComponent<Animator>();
     }
@@ -40,9 +43,22 @@ public class SonicController : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        // Buffer de Pulo
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+        // Execução do Pulo
+        if (jumpBufferCounter > 0 && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpBufferCounter = 0;
+            isGrounded = false;
         }
 
         UpdateVisuals();
@@ -58,38 +74,32 @@ public class SonicController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // --- LÓGICA POR POSIÇÃO (Mais robusta) ---
+            // Obtém o primeiro ponto de contacto para verificar a direção da colisão
+            ContactPoint2D contact = collision.GetContact(0);
+
+            // Verifica se a normal aponta para cima (y > 0.5f)
+            // Isto confirma que o Sonic atingiu o topo do inimigo, mesmo se os coliders se sobrepuserem
+            bool hitFromAbove = contact.normal.y > 0.5f;
             
-            // 1. Identificar alturas
-            // Pega a altura dos pés do Sonic (limite inferior do colisor)
-            float sonicFeetY = col.bounds.min.y;
-            // Pega a altura do centro do inimigo
-            float enemyCenterY = collision.collider.bounds.center.y;
+            // Mantemos a verificação de velocidade para garantir que o jogador está a cair
+            bool isFalling = rb.linearVelocity.y <= 1f; 
 
-            // 2. Regra do Stomp
-            // Se os pés estão acima do centro do inimigo, consideramos que foi um pulo na cabeça
-            // Adicionamos uma pequena margem (0.1f) para ser mais permissivo
-            bool isStomp = sonicFeetY > (enemyCenterY + 0.1f);
-
-            // Extra: Impede que o Sonic mate o inimigo enquanto sobe (cabeçada por baixo)
-            if (rb.linearVelocity.y > 0.1f) isStomp = false;
-
-            if (isStomp)
+            if (hitFromAbove && isFalling)
             {
-                // -- VITÓRIA (Stomp) --
                 Destroy(collision.gameObject);
                 
-                // Aplica o pulo (Bounce)
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceForce);
+                // Reinicia a velocidade Y para um ressalto consistente
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
+                rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
             }
             else
             {
-                // -- DERROTA (Dano) --
+                // Aplica dano apenas se NÃO foi um ataque válido de cima
                 if (playerHealth != null)
                 {
                     Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
-                    // Força padrão de empurrão = 5f (pode ajustar aqui)
-                    playerHealth.TakeDamage(10f, knockbackDirection, 5f); 
+                    knockbackDirection += Vector2.up * 0.5f; 
+                    playerHealth.TakeDamage(1f, knockbackDirection, 8f);
                 }
             }
         }
@@ -115,7 +125,8 @@ public class SonicController : MonoBehaviour
     {
         Vector2 boxSize = new Vector2(col.size.x * 0.9f, groundCheckHeight);
         Vector2 boxCenter = (Vector2)transform.position + col.offset + (Vector2.down * (col.size.y / 2f));
-        RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0f, Vector2.down, 0.1f, groundLayer);
+        
+        RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0f, Vector2.down, 0.05f, groundLayer);
 
         isGrounded = hit.collider != null;
 
@@ -135,24 +146,31 @@ public class SonicController : MonoBehaviour
             }
             else
             {
-                rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, deceleration * Time.fixedDeltaTime);
+                // CORREÇÃO: Aplica desaceleração APENAS no eixo X
+                // Mantemos o Y original para não cancelar o início do pulo
+                float newX = Mathf.Lerp(rb.linearVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+                rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
             }
         }
         else
         {
+            // No Ar
             if (horizontalInput != 0)
             {
                 rb.AddForce(new Vector2(horizontalInput * (acceleration * 0.5f), 0), ForceMode2D.Force);
             }
             else
             {
-                rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocity.x, 0, airDrag * Time.fixedDeltaTime), rb.linearVelocity.y);
+                float newX = Mathf.Lerp(rb.linearVelocity.x, 0, airDrag * Time.fixedDeltaTime);
+                rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
             }
         }
 
+        // Clamp apenas horizontal
         if (Mathf.Abs(rb.linearVelocity.x) > maxSpeed)
         {
-            rb.linearVelocity = new Vector2(Mathf.Sign(rb.linearVelocity.x) * maxSpeed, rb.linearVelocity.y);
+            float limitedX = Mathf.Sign(rb.linearVelocity.x) * maxSpeed;
+            rb.linearVelocity = new Vector2(limitedX, rb.linearVelocity.y);
         }
     }
 }
