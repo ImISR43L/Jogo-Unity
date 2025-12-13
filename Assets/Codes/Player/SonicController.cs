@@ -19,6 +19,9 @@ public class SonicController : MonoBehaviour
     [SerializeField] private Transform visual;
     [SerializeField] private Animator anim;
 
+    [Header("Combate")]
+    [SerializeField] private float minAttackSpeed = 8f;
+
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private PlayerHealth playerHealth;
@@ -29,6 +32,8 @@ public class SonicController : MonoBehaviour
 
     private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
+
+    private Vector2 velocitySnapshot;
 
     private void Awake()
     {
@@ -66,6 +71,9 @@ public class SonicController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 2. Tira uma "foto" da velocidade ANTES de qualquer colisão ou cálculo de física acontecer neste frame
+        velocitySnapshot = rb.linearVelocity;
+
         CheckGround();
         ApplyMovement();
     }
@@ -74,31 +82,38 @@ public class SonicController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Obtém o primeiro ponto de contacto para verificar a direção da colisão
             ContactPoint2D contact = collision.GetContact(0);
-
-            // Verifica se a normal aponta para cima (y > 0.5f)
-            // Isto confirma que o Sonic atingiu o topo do inimigo, mesmo se os coliders se sobrepuserem
-            bool hitFromAbove = contact.normal.y > 0.5f;
             
-            // Mantemos a verificação de velocidade para garantir que o jogador está a cair
-            bool isFalling = rb.linearVelocity.y <= 1f; 
+            // Verifica se bateu por cima
+            bool hitFromAbove = contact.normal.y > 0.5f;
 
-            if (hitFromAbove && isFalling)
+            // 3. Verifica a velocidade usando o SNAPSHOT (a velocidade real que ele tinha antes de bater)
+            // Usamos o valor absoluto (.Abs) para funcionar tanto para direita quanto para esquerda
+            bool isSpeedAttack = Mathf.Abs(velocitySnapshot.x) >= minAttackSpeed;
+
+            // CONDIÇÃO DE VITÓRIA: Bateu por cima OU estava correndo muito rápido
+            if (hitFromAbove || isSpeedAttack)
             {
                 Destroy(collision.gameObject);
                 
-                // Reinicia a velocidade Y para um ressalto consistente
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
-                rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+                // Só damos o pulinho (bounce) se o ataque foi por cima.
+                // Se foi ataque de velocidade (lateral), ele continua correndo sem pular.
+                if (hitFromAbove)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
+                    rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+                }
             }
+            // CONDIÇÃO DE DANO: Falhou nos testes acima
             else
             {
-                // Aplica dano apenas se NÃO foi um ataque válido de cima
                 if (playerHealth != null)
                 {
                     Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
-                    knockbackDirection += Vector2.up * 0.5f; 
+                    
+                    // Empurrão levemente para cima para não prender no chão
+                    knockbackDirection = new Vector2(knockbackDirection.x, 0.5f).normalized;
+                    
                     playerHealth.TakeDamage(1f, knockbackDirection, 8f);
                 }
             }
