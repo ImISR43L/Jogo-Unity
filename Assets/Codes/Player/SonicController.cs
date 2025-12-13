@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
 public class SonicController : MonoBehaviour
@@ -8,8 +9,13 @@ public class SonicController : MonoBehaviour
     [SerializeField] private float deceleration = 25f;
     [SerializeField] private float maxSpeed = 12f;
     [SerializeField] private float jumpForce = 15f; 
-    [SerializeField] private float bounceForce = 12f;
     [SerializeField] private float airDrag = 2f;
+
+    [Header("Configurações de Dash")]
+    [SerializeField] private float dashSpeed = 25f;
+    [SerializeField] private float dashDuration = 0.3f;
+    [SerializeField] private float dashCooldown = 1f;
+    [SerializeField] private KeyCode dashKey = KeyCode.LeftShift;
 
     [Header("Detecção de Chão")]
     [SerializeField] private LayerMask groundLayer;
@@ -18,9 +24,6 @@ public class SonicController : MonoBehaviour
     [Header("Visuais")]
     [SerializeField] private Transform visual;
     [SerializeField] private Animator anim;
-
-    [Header("Combate")]
-    [SerializeField] private float minAttackSpeed = 8f;
 
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
@@ -33,7 +36,9 @@ public class SonicController : MonoBehaviour
     private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
 
-    private Vector2 velocitySnapshot;
+    // Variáveis de Dash
+    private bool isDashing;
+    private bool canDash = true;
 
     private void Awake()
     {
@@ -46,7 +51,16 @@ public class SonicController : MonoBehaviour
 
     private void Update()
     {
+        // Impede inputs de movimento durante o Dash
+        if (isDashing) return;
+
         horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        // Input de Dash
+        if (Input.GetKeyDown(dashKey) && canDash)
+        {
+            StartCoroutine(DashCoroutine());
+        }
 
         // Buffer de Pulo
         if (Input.GetButtonDown("Jump"))
@@ -71,8 +85,8 @@ public class SonicController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // 2. Tira uma "foto" da velocidade ANTES de qualquer colisão ou cálculo de física acontecer neste frame
-        velocitySnapshot = rb.linearVelocity;
+        // Se estiver no Dash, a física padrão de movimento é ignorada
+        if (isDashing) return;
 
         CheckGround();
         ApplyMovement();
@@ -82,42 +96,63 @@ public class SonicController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            ContactPoint2D contact = collision.GetContact(0);
-            
-            // Verifica se bateu por cima
-            bool hitFromAbove = contact.normal.y > 0.5f;
-
-            // 3. Verifica a velocidade usando o SNAPSHOT (a velocidade real que ele tinha antes de bater)
-            // Usamos o valor absoluto (.Abs) para funcionar tanto para direita quanto para esquerda
-            bool isSpeedAttack = Mathf.Abs(velocitySnapshot.x) >= minAttackSpeed;
-
-            // CONDIÇÃO DE VITÓRIA: Bateu por cima OU estava correndo muito rápido
-            if (hitFromAbove || isSpeedAttack)
+            // Se estiver no Dash (Invencível) -> Mata o Inimigo
+            if (isDashing)
             {
                 Destroy(collision.gameObject);
-                
-                // Só damos o pulinho (bounce) se o ataque foi por cima.
-                // Se foi ataque de velocidade (lateral), ele continua correndo sem pular.
-                if (hitFromAbove)
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); 
-                    rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
-                }
             }
-            // CONDIÇÃO DE DANO: Falhou nos testes acima
+            // Se NÃO estiver no Dash -> Toma 10 de Dano (Independente do lado da colisão)
             else
             {
                 if (playerHealth != null)
                 {
                     Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
-                    
-                    // Empurrão levemente para cima para não prender no chão
                     knockbackDirection = new Vector2(knockbackDirection.x, 0.5f).normalized;
                     
-                    playerHealth.TakeDamage(1f, knockbackDirection, 8f);
+                    // VALOR ALTERADO: 1f -> 10f
+                    playerHealth.TakeDamage(10f, knockbackDirection, 8f);
                 }
             }
         }
+    }
+
+    private IEnumerator DashCoroutine()
+    {
+        isDashing = true;
+        canDash = false;
+
+        // 1. Ativa a invencibilidade suprema no Health
+        // Isso impede dano de qualquer fonte (colisão, espinhos, projéteis)
+        if (playerHealth != null) playerHealth.SetInvincible(true);
+
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+
+        float direction = visual.localScale.x; 
+        if (horizontalInput != 0) direction = Mathf.Sign(horizontalInput);
+
+        rb.linearVelocity = new Vector2(direction * dashSpeed, 0f);
+
+        if (anim != null) anim.SetBool("isJumping", true);
+
+        // Aguarda a duração do movimento
+        yield return new WaitForSeconds(dashDuration);
+
+        rb.gravityScale = originalGravity;
+        rb.linearVelocity = Vector2.zero; 
+        isDashing = false; // O ataque (dano no inimigo) para aqui
+
+        // 2. SEGURANÇA EXTRA (Grace Period):
+        // Mantém a invencibilidade por mais 0.2s APÓS parar o movimento.
+        // Isso evita que você tome dano se parar exatamente dentro de um inimigo.
+        yield return new WaitForSeconds(0.2f);
+
+        // Desativa a invencibilidade manual
+        if (playerHealth != null) playerHealth.SetInvincible(false);
+
+        // Cooldown
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     private void UpdateVisuals()
@@ -131,9 +166,10 @@ public class SonicController : MonoBehaviour
         if (horizontalInput > 0.01f) visual.localScale = new Vector3(1, 1, 1);
         else if (horizontalInput < -0.01f) visual.localScale = new Vector3(-1, 1, 1);
 
-        anim.SetBool("isJumping", !isGrounded);
+        // Se estiver Dashing, forçamos o estado de "Pulo" (giro) ou outra animação específica
+        anim.SetBool("isJumping", !isGrounded || isDashing);
         anim.SetBool("isStopping", isStopping);
-        anim.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0f && isGrounded && !isStopping);
+        anim.SetBool("isRunning", Mathf.Abs(horizontalInput) > 0f && isGrounded && !isStopping && !isDashing);
     }
 
     private void CheckGround()
@@ -161,8 +197,6 @@ public class SonicController : MonoBehaviour
             }
             else
             {
-                // CORREÇÃO: Aplica desaceleração APENAS no eixo X
-                // Mantemos o Y original para não cancelar o início do pulo
                 float newX = Mathf.Lerp(rb.linearVelocity.x, 0, deceleration * Time.fixedDeltaTime);
                 rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
             }
